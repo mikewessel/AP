@@ -9,6 +9,6 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+## Background
 
 Collaborative Site For Aquatic Preserve Water Quality and Seagrass Assessment
