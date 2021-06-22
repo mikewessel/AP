@@ -1,0 +1,11 @@
+name: "Aquatic Preserves"
+navbar:
+  title: "Aquatic Preserve Water Quality and Seagrass"
+  left:
+    - text: "Background"
+      href: index.html
+    - text: "Descriptive Stats"
+      href: descr.html
+output_dir: "."
+
+
