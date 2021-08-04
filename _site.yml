@@ -11,5 +11,6 @@ navbar:
     - text: "Analytical Results"
       href: analysis.html
 output_dir: "."
+css: styles.css
 
 
