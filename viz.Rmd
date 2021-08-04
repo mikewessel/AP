@@ -1,0 +1,20 @@
+---
+title: "Descriptive Stats"
+author: "Mwessel"
+date: "6/22/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Descriptive Stats Page
+
+### [Bubble Plots](https://tbep-tech.github.io/AP/docs/Bubble.pdf){target="_blank"}
+
+Bubble plots of species braun blanquet scores over time for each transect station.
+
+
+### [Heat Map](https://tbep-tech.github.io/AP/docs/heatmap.pdf){target="_blank"}
+Heatmap of total braun blanquet scores by 10cm depth interval for each transect over time. 
