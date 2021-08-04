@@ -1,14 +1,53 @@
 ---
 title: "Index"
 author: "Mwessel"
-date: "6/19/2021"
+date: "7/19/2021"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
+```{r not, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Background
 
 Collaborative Site For Aquatic Preserve Water Quality and Seagrass Assessment
+All materials are draft and not to be used for public dissemination
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(sf)
+library(haven)
+library(plotly)
+library(leaflet)
+library(here)
+```
+
+# Interactive Map 
+
+
+```{r run61, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+setwd(here::here("./shapes"))
+
+IWR_wbid <- sf::read_sf(dsn = ".", layer = "WBID_Run61")
+CHAP_tr <- sf::read_sf(dsn = ".", layer = "CHAP_SG_Stat21_Proj")
+EBAP_tr <- sf::read_sf(dsn = ".", layer = "EBAP_SG_Stat21_Proj")
+
+
+# assign crs
+IWR_wbid <- st_transform(IWR_wbid, crs = 4326)
+CHAP_tr <- st_transform(CHAP_tr , crs = 4326)
+EBAP_tr <- st_transform(EBAP_tr, crs = 4326)
+
+# plot
+leaflet::leaflet() %>%
+  leaflet::addProviderTiles(providers$CartoDB.Voyager) %>%
+  leaflet::addPolygons(color = "#222", weight = 2, opacity = 1, fillOpacity = 0,label = ~lapply(WBID, htmltools::htmlEscape), data = IWR_wbid ) %>%
+  leaflet::addCircles(color = "green", label = ~lapply(Station, htmltools::htmlEscape),data = CHAP_tr)%>%
+  leaflet::addCircles(color = "blue", label = ~lapply(Station, htmltools::htmlEscape),data = EBAP_tr)
+
+ ``` 

@@ -6,6 +6,10 @@ navbar:
       href: index.html
     - text: "Descriptive Stats"
       href: descr.html
+    - text: "Visualizations"
+      href: viz.html
+    - text: "Analytical Results"
+      href: analysis.html
 output_dir: "."
 
 
