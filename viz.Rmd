@@ -11,10 +11,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Descriptive Stats Page
 
-### [Bubble Plots](https://tbep-tech.github.io/AP/docs/Bubble.pdf){target="_blank"}
+### [Bubble Plots](https://mikewessel.github.io/AP/docs/Bubble.pdf){target="_blank"}
 
 Bubble plots of species braun blanquet scores over time for each transect station.
 
 
-### [Heat Map](https://tbep-tech.github.io/AP/docs/heatmap.pdf){target="_blank"}
+### [Heat Map](https://mikewessel.github.io/AP/docs/heatmap.pdf){target="_blank"}
 Heatmap of total braun blanquet scores by 10cm depth interval for each transect over time. 
