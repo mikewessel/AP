@@ -4,11 +4,11 @@ author: "Mwessel"
 date: "7/19/2021"
 output: html_document
 editor_options: 
-  chunk_output_type: console
+  chunk_output_type: inline
 ---
 
-```{r not, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+```{r not, include=TRUE}
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ## Background
@@ -18,7 +18,7 @@ All materials are draft and not to be used for public dissemination
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+
 library(tidyverse)
 library(sf)
 library(haven)
@@ -31,8 +31,7 @@ library(here)
 Display of aquatic preserve seagrass transect locations and associated FDEP Waterbody Identifiers (WBIDs)
 
 
-```{r run61, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+```{r output,include=TRUE,message=FALSE,warning=FALSE}
 
 setwd(here::here("./shapes"))
 
