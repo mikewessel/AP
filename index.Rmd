@@ -4,7 +4,7 @@ author: "Mwessel"
 date: "7/19/2021"
 output: html_document
 editor_options: 
-  chunk_output_type: inline
+  chunk_output_type: console
 ---
 
 ```{r not, include=TRUE}
@@ -36,7 +36,7 @@ Display of aquatic preserve seagrass transect locations and associated FDEP Wate
 setwd(here::here("./shapes"))
 
 #IWR_wbid <- sf::read_sf(dsn = ".", layer = "WBID_Run61")%>%
-#    filter(WBID %in% c("1983A","1983B","1991B","2065A","2065B","2065C","2065D","2065E","2065F","2065G","2065H1","1991A","2056A","2056B","3240A","3240B","3258A1","3258I"))
+#    filter(WBID %in% c("1983A1","1983A","1983B","1991B","2065A","2065B","2065C","2065D","2065E","2065F","2065G","2065H1","1991A","2056A","2056B","3240A","3240B","3258A1","3258I"))
 
 #st_write(st_as_sf(IWR_wbid),"IWR_wbid.shp")
 
