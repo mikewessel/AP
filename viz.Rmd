@@ -1,7 +1,6 @@
 ---
-title: "Descriptive Stats"
+title: "Visualizations"
 author: "Mwessel"
-date: "8/04/2021"
 output: html_document
 ---
 
@@ -12,9 +11,13 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Visualization Page - All products are DRAFT
 
 ### [Bubble Plots](https://mikewessel.github.io/AP/docs/Bubble.pdf){target="_blank"}
-
 Bubble plots of species braun blanquet scores over time for each transect station.
-
 
 ### [Heat Map](https://mikewessel.github.io/AP/docs/heatmap.pdf){target="_blank"}
 Heatmap of total braun blanquet scores by 10cm depth interval for each transect over time. 
+
+### [Total FreqOccur](https://mikewessel.github.io/AP/docs/Totalfreq.pdf){target="_blank"}
+Barplots of total SAV Braun Blanquet scores presented as relative frequency of occurrence for each BB interval. Rows should equal 100% for each year to account for varying levels of effort across years.
+
+### [Species FreqOccur](https://mikewessel.github.io/AP/docs/Totalfreq.pdf){target="_blank"}
+Grouped barplots of Species Braun Blanquet scores presented as relative frequency of occurrence for each BB interval for each species. Rows should equal 100% for each year to account for varying levels of effort across years.
