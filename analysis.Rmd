@@ -11,6 +11,6 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Analytical Results Page - All products are DRAFT
 
 
-### [Chisquare](https://mikewessel.github.io/AP/docs/Chisq.pdf){target="_blank"}
-Results of chi square tests of assocaition between BB categories over time.
+### [Measures of Association](https://mikewessel.github.io/AP/docs/Chisq.pdf){target="_blank"}
+Results of Mantel Haenszel and Cochrane Armitage tests of association between BB categories and time.
 

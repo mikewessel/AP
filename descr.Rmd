@@ -11,3 +11,13 @@ knitr::opts_chunk$set(echo = FALSE)
 ## Descriptive Stats Page
 
 
+### [Univariates](https://mikewessel.github.io/AP/docs/Univariates.pdf){target="_blank"}
+Distributional statistics for seagrass response metrics of interest
+
+
+### [Seasonal](https://mikewessel.github.io/AP/docs/Seasonalsamp.pdf){target="_blank"}
+Seasonal Sampling frequency by site for "Season" and Off-Season" designations
+
+
+### [Seagrass Depths](https://mikewessel.github.io/AP/docs/seagrassdepth.pdf){target="_blank"}
+Summary statistics for seagrass depth distributions by species

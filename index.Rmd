@@ -16,7 +16,14 @@ knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE)
 ## Background
 
 Collaborative Site For Aquatic Preserve Water Quality and Seagrass Assessment
-All materials are draft and not to be used for public dissemination
+All materials on this site are considered DRAFT work products. A map of the seagrass transect locations is provided below and a list of seagrass transects along with descriptive data used to summarize attributes of the transect for data management purposes is provided here: 
+### [Transect List](https://mikewessel.github.io/AP/docs/sites.pdf){target="_blank"}
+which can be downloaded for viewing and commenting. 
+
+Other tabs on this site include:
+  Descriptive Statistics, 
+  Visualizations, and 
+  Analytical Results
 
 
 ```{r setup}
@@ -30,7 +37,10 @@ library(here)
 ```
 
 # Interactive Map 
-Display of aquatic preserve seagrass transect locations and associated FDEP Waterbody Identifiers (WBIDs)
+A Display of aquatic preserve seagrass transect locations and associated FDEP Waterbody Identifiers (WBIDs) is provided below. Hovering the cursor over the transect location provides the site name while hoverig over the polygon presents the FDEP Waterbody Identifier.
+
+
+
 
 
 ```{r package-options, include=TRUE}
@@ -43,11 +53,10 @@ setwd(here::here("./shapes"))
 
 #st_write(st_as_sf(IWR_wbid),"IWR_wbid.shp")
 
-IWR_wbid<-st_read("IWR_wbid.shp")
+IWR_wbid<-st_read("IWR_wbid.shp",quiet=TRUE)
 
-CHAP_tr <- sf::read_sf(dsn = ".", layer = "CHAP_SG_Stat21_Proj")
-EBAP_tr <- sf::read_sf(dsn = ".", layer = "EBAP_SG_Stat21_Proj")
-
+CHAP_tr <- sf::read_sf(dsn = ".", layer = "CHAP_SG_Stat21_Proj",quiet=TRUE)
+EBAP_tr <- sf::read_sf(dsn = ".", layer = "EBAP_SG_Stat21_Proj",quiet=TRUE)
 
 # assign crs
 IWR_wbid <- st_transform(IWR_wbid, crs = 4326)
