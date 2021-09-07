@@ -19,5 +19,5 @@ Heatmap of total braun blanquet scores by 10cm depth interval for each transect 
 ### [Total FreqOccur](https://mikewessel.github.io/AP/docs/Totalfreq.pdf){target="_blank"}
 Barplots of total SAV Braun Blanquet scores presented as relative frequency of occurrence for each BB interval. Rows should equal 100% for each year to account for varying levels of effort across years.
 
-### [Species FreqOccur](https://mikewessel.github.io/AP/docs/Totalfreq.pdf){target="_blank"}
+### [Species FreqOccur](https://mikewessel.github.io/AP/docs/Speciesfreq.pdf){target="_blank"}
 Grouped barplots of Species Braun Blanquet scores presented as relative frequency of occurrence for each BB interval for each species. Rows should equal 100% for each year to account for varying levels of effort across years.
