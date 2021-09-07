@@ -1,7 +1,7 @@
 ---
-title: "Index"
-author: "Mwessel"
-date: "7/19/2021"
+title: "Home Page"
+author: "Mike Wessel"
+date: "Update 09/07/2021"
 output: html_document
 editor_options: 
   chunk_output_type: console
