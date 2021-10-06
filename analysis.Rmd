@@ -25,7 +25,7 @@ relied on iterative tests using binomial assignment of BB scores (e.g. BB score<
 These plots include boxplots of total braun blanquet score distributions by strata followed by panel plots of 
 individual transect total BB scores within each strata
 
-### [Flow Anomalies](https://mikewessel.github.io/AP/docs/Flows.pdf){target="_blank"}
+### [Flow Anomalies](https://mikewessel.github.io/AP/docs/doit.pdf){target="_blank"}
 Flow records for USGS gages within the study area were downloaded for the entire period of record, subset to 1998 through 2020
 and standardized to create an index of flow representing drought or surplus conditions. The standardization procedure included:
 Natural log transformation of the raw flow timeseries (a constant of 0.01 was added to adjust for values of zero),
