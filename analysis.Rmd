@@ -18,7 +18,7 @@ these tests were done in an attempt to identify an objective measure of "stable"
 The mantel Haenszel test was used to test for nonzero correlation and row mean differences
 [Mantel Haenszel chisquare](https://mikewessel.github.io/AP/docs/Chisq.pdf){target="_blank"} 
 
-while the [Cochrane Armitage trend test](https://mikewessel.github.io/AP/docs/Cochrane armitage.pdf){target="_blank"} 
+while the [Cochrane Armitage trend test](https://mikewessel.github.io/AP/docs/Cochrane.pdf){target="_blank"} 
 relied on iterative tests using binomial assignment of BB scores (e.g. BB score<=1 versus > 1) for scores 1 through 5. If results of all comparisons were non-significant the station was considered stable over time. 
 
 ### [Total BB Boxplots](https://mikewessel.github.io/AP/docs/totalBB.pdf){target="_blank"}
@@ -32,7 +32,7 @@ Natural log transformation of the raw flow timeseries (a constant of 0.01 was ad
 calculation of the mean and standard deviation of the natural log transformed values by month to obtain long term monthly averages   and mapping deviation of each date in the timeseries to the long term monthly average. 
 
 That is:
-    (date - mn)/std
+    (date flow - monthly mean flow)/std(monthly mean flow)
     
 This function produces a timeseries of daily values expressed in term of deviations from long term averages in units of standard deviation such that the mean is zero. Deviations greater than +/- 2 indicate strong deviations from long term average conditions.
 
